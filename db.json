@@ -1,0 +1,47 @@
+{
+  "users": [
+    {
+      "id": "b783",
+      "username": "Sandani",
+      "email": "mdsandani786@gmail.com",
+      "password": "123456"
+    },
+    {
+      "id": "4d0f",
+      "username": "Noor",
+      "email": "noor@gmail.com",
+      "password": "123456"
+    }
+  ],
+  "Todo": [
+    {
+      "id": "5de3",
+      "todo": "learn java",
+      "create_Time": "12:05:36 PM",
+      "user_id": "b783",
+      "is_completed": false
+    },
+    {
+      "id": "35ee",
+      "todo": "learn python",
+      "create_Time": "12:05:45 PM",
+      "is_complted": false,
+      "user_id": "b783",
+      "is_completed": false
+    },
+    {
+      "id": "02fa",
+      "todo": "learn React",
+      "create_Time": "12:07:27 PM",
+      "user_id": "4d0f",
+      "is_completed": false
+    },
+    {
+      "id": "75a5",
+      "todo": "learn JavaScript",
+      "create_Time": "12:07:38 PM",
+      "user_id": "4d0f",
+      "is_completed": false
+    }
+  ]
+}
