@@ -12,7 +12,7 @@ function Home() {
     useEffect(()=>{
         const getTodo=async()=>{
         try {
-            let res=await fetch(`http://localhost:3001/Todo?user_id=${loginUser.id}`)
+            let res=await fetch(`https://todolist-q7jt.onrender.com/Todo?user_id=${loginUser.id}`)
             let jres=await res.json();
             setTodo(jres)
         } catch (error) {
