@@ -9,7 +9,7 @@ function Complete() {
     useEffect(()=>{
         const getComplted=async()=>{
            try {
-             let res=await fetch(`http://localhost:3001/Todo?is_completed=${true}&used_id=${user.id}`)
+             let res=await fetch(`https://todolist-q7jt.onrender.com/Todo?is_completed=${true}&used_id=${user.id}`)
             let jres=await res.json()
             setTodos(jres)
            } catch (error) {

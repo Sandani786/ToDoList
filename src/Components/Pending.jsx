@@ -8,7 +8,7 @@ function Pending() {
 
     useEffect(()=>{
         const getPending=async()=>{
-             let res=await fetch(`http://localhost:3001/Todo?is_completed=${false}&user_id=${user.id}`)
+             let res=await fetch(`https://todolist-q7jt.onrender.com/Todo?is_completed=${false}&user_id=${user.id}`)
             let jres=await res.json();
             setTodo(jres)
         }

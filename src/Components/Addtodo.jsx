@@ -8,7 +8,7 @@ function Addtodo() {
         let date=new Date()
           let addTodo=async()=>{
             try {
-                let res=await fetch("http://localhost:3001/Todo",{
+                let res=await fetch("https://todolist-q7jt.onrender.com/Todo",{
                 method:"POST",
                 headers:{
                     "Content-Type":"application/json"

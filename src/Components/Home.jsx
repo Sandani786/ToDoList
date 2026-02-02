@@ -25,13 +25,13 @@ function Home() {
      // UPDATE (toggle complete)
     const toggleComplete = async (id) => {
         try {
-            let response = await fetch(`http://localhost:3001/Todo/${id}`);
+            let response = await fetch(`https://todolist-q7jt.onrender.com/Todo/${id}`);
             let item = await response.json();
 
                         item.is_completed = !item.is_completed;
 
 
-            await fetch(`http://localhost:3001/Todo/${id}`, {
+            await fetch(`https://todolist-q7jt.onrender.com/Todo/${id}`, {
                 method: "PUT",
                 headers: {
                     "Content-Type": "application/json"
@@ -54,7 +54,7 @@ function Home() {
                 <div key={item.id}>
                     <h1 style={{textDecoration:item.is_completed?"line-through":"none"}}>{item.todo}</h1>
                     <button onClick={async()=>{
-                        let res=fetch(`http://localhost:3001/Todo/${item.id}`,{
+                        let res=fetch(`https://todolist-q7jt.onrender.com/Todo/${item.id}`,{
                             method:"DELETE"
                         })
                        

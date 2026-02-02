@@ -11,10 +11,10 @@ function Register() {
         event.preventDefault();
         const new_user={username,email,password}
         const addNewUser=async()=>{
-           let getUser= await fetch(`http://localhost:3001/users?email=${new_user.email}`)
+           let getUser= await fetch(`https://todolist-q7jt.onrender.com/users?email=${new_user.email}`)
            let checkjson=await getUser.json();
            if(checkjson.length==0){
-            let res=await fetch("http://localhost:3001/users",{
+            let res=await fetch("https://todolist-q7jt.onrender.com/users",{
                 method:"POST",
                 headers:{
                     "Content-Type":"application/json"
