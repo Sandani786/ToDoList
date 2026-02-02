@@ -13,7 +13,13 @@ function Addtodo() {
                 headers:{
                     "Content-Type":"application/json"
                 },
-                body:JSON.stringify({todo,create_Time:date.toLocaleTimeString(),is_complted:false,user_id:JSON.parse(user_data).id})
+                // body:JSON.stringify({todo,create_Time:date.toLocaleTimeString(),is_complted:false,user_id:JSON.parse(user_data).id})
+                body: JSON.stringify({
+  todo,
+  create_Time: date.toLocaleTimeString(),
+  is_completed: false,
+  user_id: JSON.parse(user_data).id
+})
             })
              if(res.ok){
             alert("add")
